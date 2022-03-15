@@ -12,20 +12,20 @@
     <!--footer end-->
   </section>
   <!-- js placed at the end of the document so the pages load faster -->
-  <script src="template/lib/jquery/jquery.min.js"></script>
+  <script src="{{asset('lib/jquery/jquery.min.js');}}"></script>
 
-  <script src="template/lib/bootstrap/js/bootstrap.min.js"></script>
-  <script class="include" type="text/javascript" src="template/lib/jquery.dcjqaccordion.2.7.js"></script>
-  <script src="template/lib/jquery.scrollTo.min.js"></script>
-  <script src="template/lib/jquery.nicescroll.js" type="text/javascript"></script>
-  <script src="template/lib/jquery.sparkline.js"></script>
+  <script src="{{asset('lib/bootstrap/js/bootstrap.min.js');}}"></script>
+  <script class="include" type="text/javascript" src="{{asset('lib/jquery.dcjqaccordion.2.7.js');}}"></script>
+  <script src="{{asset('lib/jquery.scrollTo.min.js');}}"></script>
+  <script src="{{asset('lib/jquery.nicescroll.js');}}" type="text/javascript"></script>
+  <script src="{{asset('lib/jquery.sparkline.js');}}"></script>
   <!--common script for all pages-->
-  <script src="template/lib/common-scripts.js"></script>
-  <script type="text/javascript" src="template/lib/gritter/js/jquery.gritter.js"></script>
-  <script type="text/javascript" src="template/lib/gritter-conf.js"></script>
+  <script src="{{asset('lib/common-scripts.js');}}"></script>
+  <script type="text/javascript" src="{{asset('lib/gritter/js/jquery.gritter.js');}}"></script>
+  <script type="text/javascript" src="{{asset('lib/gritter-conf.js');}}"></script>
   <!--script for this page-->
-  <script src="src/public/template/lib/sparkline-chart.js"></script>
-  <script src="src/public/template/lib/zabuto_calendar.js"></script>
+  <script src="{{asset('lib/sparkline-chart.js');}}"></script>
+  <script src="{{asset('lib/zabuto_calendar.js');}}"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <script type="text/javascript">
     $(document).ready(function() {

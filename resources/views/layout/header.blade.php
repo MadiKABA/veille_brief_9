@@ -9,20 +9,20 @@
   <title>Dashio - Bootstrap Admin Template</title>
 
   <!-- Favicons -->
-  <link href="template/img/favicon.png" rel="icon">
-  <link href="template/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="{{asset('img/favicon.png');}}" rel="icon">
+  <link href="{{asset('img/apple-touch-icon.png');}}" rel="apple-touch-icon">
 
   <!-- Bootstrap core CSS -->
-  <link href="template/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="{{asset('lib/bootstrap/css/bootstrap.min.css');}}" rel="stylesheet">
   <!--external css-->
-  <link href="template/lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
-  <link rel="stylesheet" type="text/css" href="template/css/zabuto_calendar.css">
-  <link rel="stylesheet" type="text/css" href="template/lib/gritter/css/jquery.gritter.css" />
+  <link href="{{asset('lib/font-awesome/css/font-awesome.css');}}" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="{{asset('css/zabuto_calendar.css');}}">
+  <link rel="stylesheet" type="text/css" href="{{asset('lib/gritter/css/jquery.gritter.css');}}" />
   <!-- Custom styles for this template -->
-  <link href="template/css/style.css" rel="stylesheet">
-  <link href="template/css/style-responsive.css" rel="stylesheet">
+  <link href="{{asset('css/style.css');}}" rel="stylesheet">
+  <link href="{{asset('css/style-responsive.css');}}" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <script src="template/lib/chart-master/Chart.js"></script>
+  <script src="{{asset('lib/chart-master/Chart.js');}}"></script>
 
   <!-- =======================================================
     Template Name: Dashio
@@ -70,7 +70,7 @@
       <div id="sidebar" class="nav-collapse ">
         <!-- sidebar menu start-->
         <ul class="sidebar-menu" id="nav-accordion">
-          <p class="centered"><a href="profile.html"><img src="template/img/ui-sam.jpg" class="img-circle" width="80"></a></p>
+          <p class="centered"><a href="profile.html"><img src="{{asset('img/ui-sam.jpg');}}" class="img-circle" width="80"></a></p>
           <h5 class="centered">Sam Soffes</h5>
           <li class="mt">
             <a class="active" href="home">

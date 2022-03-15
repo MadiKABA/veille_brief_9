@@ -49,4 +49,21 @@ class EntrepriseController extends Controller
         $entreprise=Entreprise::find($id);
         return view('entreprise.show',compact('entreprise'));
     }
+    public function edit($id)
+    {
+        $quartiers=Quartier::all();
+        $domaines=Domaine::all();
+        $nbreEmployes=nombre_employe::all();
+        $entreprise=Entreprise::find($id);
+        return view('entreprise.edit',compact('quartiers','domaines','nbreEmployes','entreprise'));
+     
+    }
+
+    public function update(Request  $request,$id)
+    {
+        Entreprise::update($request->all());
+        return redirect()->route('entreprise.list');
+        //Entreprise::create($request->all());
+        //return redirect()->route('entrprise.list')->wit('success','Entreprise ajouter avec succes');
+    }
 }

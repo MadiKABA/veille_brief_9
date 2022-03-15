@@ -22,8 +22,9 @@
                 <th scope="row">{{$en->siegeSocial}}</th>
                 <th scope="row">{{$en->quartier}}</th>
                 <th scope="row"><a href="{{route('entreprise.delete',['id'=>$en->id])}}">Delete</a></th>
+                <th scope="row"><a href="{{route('entreprise.edit',['id'=>$en->id])}}">Edit</a></th>
                 <th scope="row"><a href="{{route('entreprise.show',['id'=>$en->id])}}">Voir Plus</a></th>
-                <th scope="row"><a href="editEntreprise/id={{$en->id}}">Update</a></th>
+               
             </tr>
         @endforeach
   </tbody>
