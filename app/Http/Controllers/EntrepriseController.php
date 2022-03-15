@@ -38,8 +38,15 @@ class EntrepriseController extends Controller
         //return redirect()->route('entrprise.list')->wit('success','Entreprise ajouter avec succes');
     }
 
-    public function delete($_GET['id'])
+    public function delete($id)
     {
+        Entreprise::find($id)->delete();
+        return redirect()->back();
+    }
 
+    public function show($id)
+    {
+        $entreprise=Entreprise::find($id);
+        return view('entreprise.show',compact('entreprise'));
     }
 }
