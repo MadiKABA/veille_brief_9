@@ -61,7 +61,8 @@ class EntrepriseController extends Controller
 
     public function update(Request  $request,$id)
     {
-        Entreprise::update($request->all());
+        $entreprise=Entreprise::find($id);
+        $entreprise->save($request->all());
         return redirect()->route('entreprise.list');
         //Entreprise::create($request->all());
         //return redirect()->route('entrprise.list')->wit('success','Entreprise ajouter avec succes');

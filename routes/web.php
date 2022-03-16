@@ -25,4 +25,4 @@ Route::get('/deleteEntreprise/{id}', [EntrepriseController::class, 'delete'])->n
 Route::get('/showEntreprise/{id}', [EntrepriseController::class, 'show'])->name('entreprise.show');
 Route::get('/editEntreprise/{id}', [EntrepriseController::class, 'edit'])->name('entreprise.edit');
 Route::post('/addEntreprise', [EntrepriseController::class, 'save']);
-Route::put('/updateEntreprise/{id}', [EntrepriseController::class, 'update']);
+Route::put('/updateEntreprise/{id}', [EntrepriseController::class, 'update'])->name('entreprise.update');

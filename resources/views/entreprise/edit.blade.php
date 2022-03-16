@@ -6,7 +6,7 @@
     <div class="container">
     <div class="row">
         <div class="col">
-            <form action="{{url('updateEntreprise'.$entreprise->id)}}" class="row g-3 needs-validation" novalidate method="POST">
+            <form action="{{route('entreprise.update',['id'=>$entreprise->id])}}" class="row g-3 needs-validation" novalidate method="POST">
                 @csrf
                 @method("PUT")
                 <div class="col-md-4">
